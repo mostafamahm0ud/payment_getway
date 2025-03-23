@@ -8,17 +8,17 @@ class MycartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          centerTitle: true,
-          title: const Text(
-            "My Cart",
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-          ),
-          backgroundColor: Colors.greenAccent),
+        centerTitle: true,
+        title: const Text(
+          "My Cart",
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        ),
+      ),
       body: const Center(
         child: Text("My Cart"),
       ),
       floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.greenAccent,
+          backgroundColor: Colors.deepPurple,
           onPressed: () {
             showModalBottomSheet(
                 context: context,

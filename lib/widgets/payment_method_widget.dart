@@ -16,11 +16,11 @@ class PaymentMethodWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: isActive ? Colors.greenAccent : Colors.white, 
+        color: isActive ? Colors.deepPurple : Colors.white, 
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: isActive ? Colors.green : Colors.greenAccent, 
-          // width: isActive ? 2 : 1, 
+          color: isActive ? Colors.grey : Colors.deepPurple, 
+          width: isActive ? 2 : 1, 
         ),
       ),
       child: Padding(

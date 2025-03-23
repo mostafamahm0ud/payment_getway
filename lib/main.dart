@@ -3,12 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:payment_getway/my_cart_screen.dart';
 
 void main() {
-  runApp(
-    DevicePreview(
-      builder: (context) => const PaymentGetwayApp(),
-      enabled: true,
-    ),
-  );
+  // runApp(
+  //   DevicePreview(
+  //     builder: (context) => const PaymentGetwayApp(),
+  //     enabled: true,
+  //   ),
+  // );
+  runApp(const PaymentGetwayApp());
 }
 
 class PaymentGetwayApp extends StatelessWidget {

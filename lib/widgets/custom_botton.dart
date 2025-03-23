@@ -16,7 +16,7 @@ class CustomBotton extends StatelessWidget {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.greenAccent,
+                  color: Colors.deepPurple,
                   borderRadius: BorderRadius.circular(8),
                 ),
                 height: 50,
