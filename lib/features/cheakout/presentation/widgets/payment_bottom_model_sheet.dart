@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:payment_getway/widgets/custom_botton.dart';
-import 'package:payment_getway/widgets/list_payment_method.dart';
+import 'package:payment_getway/features/cheakout/presentation/widgets/custom_botton.dart';
+import 'package:payment_getway/features/cheakout/presentation/widgets/list_payment_method.dart';
 
 class PaymentBottomModelSheet extends StatelessWidget {
   const PaymentBottomModelSheet({super.key});

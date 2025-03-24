@@ -1,6 +1,5 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:payment_getway/my_cart_screen.dart';
+import 'package:payment_getway/features/cheakout/presentation/my_cart_screen.dart';
 
 void main() {
   // runApp(

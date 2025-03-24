@@ -5,22 +5,22 @@ class PaymentMethodWidget extends StatelessWidget {
     super.key,
     required this.icon,
     required this.label,
-    this.isActive = false, 
+    this.isActive = false,
   });
 
   final IconData? icon;
   final String label;
-  final bool isActive; 
+  final bool isActive;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: isActive ? Colors.deepPurple : Colors.white, 
+        color: isActive ? Colors.deepPurple : Colors.white,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: isActive ? Colors.grey : Colors.deepPurple, 
-          width: isActive ? 2 : 1, 
+          color: isActive ? Colors.grey : Colors.deepPurple,
+          width: isActive ? 2 : 1,
         ),
       ),
       child: Padding(
@@ -31,14 +31,14 @@ class PaymentMethodWidget extends StatelessWidget {
             Icon(
               icon ?? Icons.credit_card,
               size: 24,
-              color: isActive ? Colors.white : Colors.black, 
+              color: isActive ? Colors.white : Colors.black,
             ),
             Text(
               label,
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
-                color: isActive ? Colors.white : Colors.black, 
+                color: isActive ? Colors.white : Colors.black,
               ),
             ),
           ],

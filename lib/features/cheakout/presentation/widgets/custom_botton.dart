@@ -23,7 +23,8 @@ class CustomBotton extends StatelessWidget {
                 child: Center(
                   child: Text(
                     data,
-                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),
                 ),

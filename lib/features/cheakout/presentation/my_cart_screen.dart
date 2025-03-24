@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payment_getway/widgets/payment_bottom_model_sheet.dart';
+import 'package:payment_getway/features/cheakout/presentation/widgets/payment_bottom_model_sheet.dart';
 
 class MycartScreen extends StatelessWidget {
   const MycartScreen({super.key});

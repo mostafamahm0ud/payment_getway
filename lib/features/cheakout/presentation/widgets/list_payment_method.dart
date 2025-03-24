@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payment_getway/widgets/payment_method_widget.dart';
+import 'package:payment_getway/features/cheakout/presentation/widgets/payment_method_widget.dart';
 
 class ListPaymentMethod extends StatefulWidget {
   const ListPaymentMethod({super.key});
