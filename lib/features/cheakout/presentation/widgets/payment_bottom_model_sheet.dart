@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payment_getway/features/cheakout/presentation/widgets/custom_botton.dart';
+import 'package:payment_getway/features/cheakout/presentation/widgets/custom_bottun_sheet_consumer.dart';
 import 'package:payment_getway/features/cheakout/presentation/widgets/list_payment_method.dart';
 
 class PaymentBottomModelSheet extends StatelessWidget {
@@ -12,7 +12,7 @@ class PaymentBottomModelSheet extends StatelessWidget {
       spacing: 5,
       children: [
         ListPaymentMethod(),
-        CustomBotton(data: "Checkout", onPressed: () {}),
+        CustomButtonConsumer(),
         SizedBox(
           height: 10,
         ),

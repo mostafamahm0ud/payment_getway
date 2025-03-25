@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:payment_getway/core/utils/api_keys.dart';
 import 'package:payment_getway/features/cheakout/presentation/my_cart_screen.dart';
 
 void main() {
@@ -8,6 +10,7 @@ void main() {
   //     enabled: true,
   //   ),
   // );
+  Stripe.publishableKey = PaymentApiKeys.stripePublishableKey;
   runApp(const PaymentGetwayApp());
 }
 

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:payment_getway/features/cheakout/data/repo/checkout_repo_impl.dart';
+import 'package:payment_getway/features/cheakout/presentation/manager/cubit/strip_payment_cubit_cubit.dart';
 import 'package:payment_getway/features/cheakout/presentation/widgets/payment_bottom_model_sheet.dart';
 
 class MycartScreen extends StatelessWidget {
@@ -25,7 +28,11 @@ class MycartScreen extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16)),
                 builder: (context) {
-                  return const PaymentBottomModelSheet();
+                  return BlocProvider(
+                    create: (context) =>
+                        StripPaymentCubitCubit(CheckoutRepoImpl()),
+                    child: PaymentBottomModelSheet(),
+                  );
                 });
           },
           child: const Icon(Icons.payment)),
