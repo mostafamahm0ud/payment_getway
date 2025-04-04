@@ -46,15 +46,6 @@ class CustomButtonConsumer extends StatelessWidget {
             isLoading: state is StripPaymentCubitLoading ? true : false,
             data: "Checkout",
             onPressed: () {
-              // PaymentIntentInputModel paymentIntentInputModel =
-              //     PaymentIntentInputModel(
-              //   amount: "100",
-              //   currency: "USD",
-              //   customerId: 'cus_S0agI7o7rbXbHl',
-              // );
-              // BlocProvider.of<StripPaymentCubitCubit>(context).makePayment(
-              //     paymentIntentInputModel: paymentIntentInputModel);
-
               payPalNavigator(context);
             });
       },
@@ -83,14 +74,23 @@ class CustomButtonConsumer extends StatelessWidget {
         note: "Contact us for any questions on your order.",
         onSuccess: (Map params) async {
           log("onSuccess: $params");
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text("Payment Successful!")),
+          );
           Navigator.pop(context);
         },
         onError: (error) {
           log("onError: $error");
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text("Payment Failed: $error")),
+          );
           Navigator.pop(context);
         },
         onCancel: () {
-          print('cancelled:');
+          log('cancelled');
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text("Payment Cancelled")),
+          );
           Navigator.pop(context);
         },
       ),
